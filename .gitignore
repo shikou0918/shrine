@@ -1,0 +1,8 @@
+.env
+.env.example
+.DS_Store
+.editorconfig
+.env
+.env.example
+.gitattributes
+.styleci.yml
