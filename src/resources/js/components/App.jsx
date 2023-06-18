@@ -1,10 +1,12 @@
 import ReactDOM from 'react-dom';
+import { MainGoogleMap } from './maps/MainGoogleMap';
 
 function App() {
+  const GoogleApiKey = appDom?.dataset.googleApiKey;
 
   return (
     <>
-      <h1>test</h1>
+      <MainGoogleMap GoogleApiKey={GoogleApiKey} />
     </>
   );
 }

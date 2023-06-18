@@ -231,5 +231,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    'google_api_key' => env('GOOGLE_API_KEY'),
 
 ];
