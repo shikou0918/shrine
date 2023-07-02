@@ -22,10 +22,10 @@
         "webpack-obfuscator": "^3.5.1"
     },
     "dependencies": {
-        "@emotion/react": "^11.10.5",
-        "@emotion/styled": "^11.10.5",
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
         "@mui/icons-material": "^5.11.0",
-        "@mui/material": "^5.11.1",
+        "@mui/material": "^5.13.6",
         "@react-google-maps/api": "^2.18.1",
         "react-router-dom": "^6.8.0",
         "react-transition-group": "^4.4.5"
