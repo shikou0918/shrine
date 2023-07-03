@@ -14877,9 +14877,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Shrine = function Shrine(_ref) {
+var Shrine = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().memo(function (_ref) {
   var selectedShrine = _ref.selectedShrine,
     GoogleApiKey = _ref.GoogleApiKey;
+  console.log(selectedShrine);
   var infoWindowStyle = {
     width: '428px',
     height: 'auto',
@@ -14908,7 +14909,7 @@ var Shrine = function Shrine(_ref) {
       alt: "Shrine Photo"
     })]
   });
-};
+});
 
 /***/ }),
 

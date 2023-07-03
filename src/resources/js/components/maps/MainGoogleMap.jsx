@@ -79,9 +79,6 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
           )}
         </GoogleMap>
       </LoadScript>
-      {/* {selectedShrine && (
-        <Shrine selectedShrine={selectedShrine} />
-      )} */}
     </>
   );
 };

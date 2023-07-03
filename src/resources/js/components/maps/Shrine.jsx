@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-export const Shrine = ({ selectedShrine, GoogleApiKey }) => {
+export const Shrine = React.memo(({ selectedShrine, GoogleApiKey }) => {
   const infoWindowStyle = {
     width: '428px',
     height: 'auto',
@@ -31,5 +31,4 @@ export const Shrine = ({ selectedShrine, GoogleApiKey }) => {
       </Box>
     )
   );
-};
-
+});
