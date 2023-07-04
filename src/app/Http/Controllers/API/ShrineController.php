@@ -20,7 +20,7 @@ class ShrineController extends Controller
             'query' => '神社', // 検索クエリ
             'location' => $lat.','.$lng, // Specify the latitude and longitude
             'radius' => 5000, // Optional: Set the search radius in meters
-            'language' => $language
+            'language' => $language,
         ]);
 
         return $response->json();
