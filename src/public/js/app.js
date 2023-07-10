@@ -8921,6 +8921,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< Updated upstream
 function Shrine(_ref) {
   var shrineInformation = _ref.shrineInformation;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
@@ -8936,6 +8937,38 @@ function Shrine(_ref) {
           children: shrine.name
         }, shrine.place_id);
       })
+=======
+
+var Shrine = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().memo(function (_ref) {
+  var selectedShrine = _ref.selectedShrine,
+    GoogleApiKey = _ref.GoogleApiKey;
+  var infoWindowStyle = {
+    width: '428px',
+    height: 'auto',
+    maxHeight: '488px',
+    backgroundColor: 'white',
+    marginTop: '50px',
+    marginBottom: '10px',
+    fontSize: 14,
+    zIndex: 100
+  };
+  var photoUrl = null;
+  if (selectedShrine && selectedShrine.photos && selectedShrine.photos.length > 0) {
+    var photoReference = selectedShrine.photos[0].photo_reference;
+    var width = 400;
+    var height = 300;
+    photoUrl = "https://maps.googleapis.com/maps/api/place/photo?photoreference=".concat(photoReference, "&key=").concat(GoogleApiKey, "&maxwidth=").concat(width, "&maxheight=").concat(height);
+  }
+  return selectedShrine && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    sx: infoWindowStyle,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: selectedShrine.name
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      children: selectedShrine.description
+    }), photoUrl && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      src: photoUrl,
+      alt: "Shrine Photo"
+>>>>>>> Stashed changes
     })]
   });
 }
