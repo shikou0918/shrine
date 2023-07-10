@@ -8858,7 +8858,7 @@ var MainGoogleMap = function MainGoogleMap(_ref) {
                 return _objectSpread(_objectSpread({}, shrine), {}, {
                   id: index + 1 // 一意のIDを生成して神社情報に追加
                 });
-              }); // console.log(shrinesWithId.geometry);
+              });
 
               setShrineInformation(shrinesWithId);
               _context.next = 11;
@@ -8879,7 +8879,6 @@ var MainGoogleMap = function MainGoogleMap(_ref) {
     }();
     fetchShrines();
   }, []);
-  console.log(shrineInformation);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_4__.LoadScript, {
       googleMapsApiKey: GoogleApiKey ? GoogleApiKey : "",
