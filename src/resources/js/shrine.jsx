@@ -1,5 +1,5 @@
 
-export const getShrineSearch = async (accountEditConfirm) => {
+export const getShrineSearch = async () => {
   const url = '/api/shrines/index';
   const res = await axios.get(url, {
   }).then((response) => {

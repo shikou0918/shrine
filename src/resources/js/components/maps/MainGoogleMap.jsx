@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
-import Shrine from "./Shrine";
+import { GoogleMap, LoadScript, InfoWindow, Marker } from "@react-google-maps/api";
+import { Shrine } from "./Shrine";
 import axios from 'axios';
-import { Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   height: "100vh",
@@ -16,6 +15,9 @@ const center = {
 
 export const MainGoogleMap = ({ GoogleApiKey }) => {
   const [shrineInformation, setShrineInformation] = useState([]);
+  const [selectedShrine, setSelectedShrine] = useState(null);
+
+  const [infoWindowPosition, setWindowPosition] = useState(null);
 
   useEffect(() => {
     const fetchShrines = async () => {
@@ -24,6 +26,7 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
           params: {
             lat: center.lat,
             lng: center.lng,
+            language: 'ja'
           }
         });
         const shrinesWithId = response.data.results.map((shrine, index) => ({
@@ -38,11 +41,21 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
     fetchShrines();
   }, []);
 
+  useEffect(() => {
+    if (selectedShrine) {
+      const position = {
+        lat: selectedShrine.geometry.location.lat,
+        lng: selectedShrine.geometry.location.lng
+      }
+      setWindowPosition(position);
+    }
+  }, [selectedShrine]);
+
   return (
     <>
       <LoadScript googleMapsApiKey={GoogleApiKey ? GoogleApiKey : ""}>
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
-         {shrineInformation.map((shrine) => (
+          {shrineInformation.map((shrine) => (
             <Marker
               key={shrine.id}
               position={{
@@ -50,12 +63,22 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
                 lng: shrine.geometry.location.lng
               }}
               title={shrine.name}
+              onClick={() => setSelectedShrine(shrine)}
             />
           ))}
-          <Shrine shrineInformation={shrineInformation} />
+          {infoWindowPosition && (
+            <InfoWindow
+              position={infoWindowPosition}
+              onCloseClick={() => {
+                setSelectedShrine(null);
+                setWindowPosition(null);
+              }}
+            >
+              <Shrine selectedShrine={selectedShrine}  GoogleApiKey={GoogleApiKey} />
+            </InfoWindow>
+          )}
         </GoogleMap>
       </LoadScript>
     </>
   );
 };
-
