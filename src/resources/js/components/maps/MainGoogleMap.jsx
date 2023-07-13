@@ -55,7 +55,7 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
         }
       };
       fetchShrines();
-    // }
+    }
   };
 
   useEffect(() => {
