@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { Box } from '@mui/material';
 import { GoogleMap, LoadScript, InfoWindow, Marker } from "@react-google-maps/api";
 import { Shrine } from "./Shrine";
+import { Header } from "../header/Header";
 import axios from 'axios';
 
 const containerStyle = {
   height: "100vh",
   width: "100%",
+};
+
+const headerStyle = {
+  position: 'fixed',
+  top: 0,
+  background: '#fff',
+  zIndex: 1,
 };
 
 const initializeCenter = {
@@ -70,6 +79,9 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
 
   return (
     <>
+      <Box style={headerStyle}>
+        <Header />
+      </Box>
       <LoadScript googleMapsApiKey={GoogleApiKey ? GoogleApiKey : ""}>
         <GoogleMap
           mapContainerStyle={containerStyle}
