@@ -56,13 +56,13 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
           });
           const shrinesWithId = response.data.results.map((shrine, index) => ({
             ...shrine,
-            id: index + 1, // 一意のIDを生成して神社情報に追加
           }));
-          setShrineInformation(shrinesWithId);
+          setShrineInformation((prevShrines) => [...prevShrines, ...shrinesWithId]);
         } catch (error) {
           console.error(error);
         }
       };
+
       fetchShrines();
     }
   };
@@ -91,9 +91,9 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
           onDragEnd={handleOnChange}
           zoom={17}
         >
-          {shrineInformation.map((shrine) => (
+          {shrineInformation.map((shrine, index) => (
             <Marker
-              key={shrine.id}
+              key={index + 1}
               position={{
                 lat: shrine.geometry.location.lat,
                 lng: shrine.geometry.location.lng
