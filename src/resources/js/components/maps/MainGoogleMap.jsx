@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Box } from '@mui/material';
 import { GoogleMap, LoadScript, InfoWindow, Marker } from "@react-google-maps/api";
-import { Shrine } from "./Shrine";
+import { ShrineMarkers } from "./ShrineMarkers";
+import { ShrineDetail } from "./ShrineDetail";
 import { Header } from "../header/Header";
 import axios from 'axios';
 
@@ -92,12 +93,10 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
           zoom={17}
         >
           {shrineInformation.map((shrine, index) => (
-            <Marker
+            <ShrineMarkers
               key={index + 1}
-              position={{
-                lat: shrine.geometry.location.lat,
-                lng: shrine.geometry.location.lng
-              }}
+              lat={shrine.geometry.location.lat}
+              lng={shrine.geometry.location.lng}
               title={shrine.name}
               onClick={() => setSelectedShrine(shrine)}
             />
@@ -110,7 +109,7 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
                 setWindowPosition(null);
               }}
             >
-              <Shrine selectedShrine={selectedShrine} GoogleApiKey={GoogleApiKey} />
+              <ShrineDetail selectedShrine={selectedShrine} GoogleApiKey={GoogleApiKey} />
             </InfoWindow>
           )}
         </GoogleMap>
