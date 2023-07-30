@@ -15674,6 +15674,35 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./resources/js/components/header/HeaderFavoriteButton.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/header/HeaderFavoriteButton.jsx ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HeaderFavoriteButton: () => (/* binding */ HeaderFavoriteButton)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../DefaultButtonEmotion */ "./resources/js/components/DefaultButtonEmotion.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var HeaderFavoriteButton = function HeaderFavoriteButton() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__.DefaultButtonEmotion, {
+      text: "\u304A\u6C17\u306B\u5165\u308A\u4E00\u89A7"
+    })
+  });
+};
+
+/***/ }),
+
 /***/ "./resources/js/components/header/HeaderRightSide.jsx":
 /*!************************************************************!*\
   !*** ./resources/js/components/header/HeaderRightSide.jsx ***!
@@ -15688,13 +15717,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _modal_ShrineList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal/ShrineList */ "./resources/js/components/header/modal/ShrineList.jsx");
-/* harmony import */ var _modal_FavoriteList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modal/FavoriteList */ "./resources/js/components/header/modal/FavoriteList.jsx");
-/* harmony import */ var _modal_VisitedList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modal/VisitedList */ "./resources/js/components/header/modal/VisitedList.jsx");
+/* harmony import */ var _HeaderFavoriteButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderFavoriteButton */ "./resources/js/components/header/HeaderFavoriteButton.jsx");
+/* harmony import */ var _HeaderShrineButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderShrineButton */ "./resources/js/components/header/HeaderShrineButton.jsx");
+/* harmony import */ var _HeaderVisitedButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HeaderVisitedButton */ "./resources/js/components/header/HeaderVisitedButton.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-// import { DefaultButtonEmotion } from '../DefaultButtonEmotion';
 
 
 
@@ -15709,36 +15737,36 @@ var HeaderRightSide = function HeaderRightSide() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
       sx: BoxStyle,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_modal_ShrineList__WEBPACK_IMPORTED_MODULE_1__.ShrineList, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_modal_FavoriteList__WEBPACK_IMPORTED_MODULE_2__.FavoriteList, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_modal_VisitedList__WEBPACK_IMPORTED_MODULE_3__.VisitedList, {})]
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_HeaderFavoriteButton__WEBPACK_IMPORTED_MODULE_1__.HeaderFavoriteButton, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_HeaderShrineButton__WEBPACK_IMPORTED_MODULE_2__.HeaderShrineButton, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_HeaderVisitedButton__WEBPACK_IMPORTED_MODULE_3__.HeaderVisitedButton, {})]
     })
   });
 };
 
 /***/ }),
 
-/***/ "./resources/js/components/header/modal/FavoriteList.jsx":
+/***/ "./resources/js/components/header/HeaderShrineButton.jsx":
 /*!***************************************************************!*\
-  !*** ./resources/js/components/header/modal/FavoriteList.jsx ***!
+  !*** ./resources/js/components/header/HeaderShrineButton.jsx ***!
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   FavoriteList: () => (/* binding */ FavoriteList)
+/* harmony export */   HeaderShrineButton: () => (/* binding */ HeaderShrineButton)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../DefaultButtonEmotion */ "./resources/js/components/DefaultButtonEmotion.jsx");
+/* harmony import */ var _DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../DefaultButtonEmotion */ "./resources/js/components/DefaultButtonEmotion.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-var FavoriteList = function FavoriteList() {
+var HeaderShrineButton = function HeaderShrineButton() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__.DefaultButtonEmotion, {
-      text: "\u304A\u6C17\u306B\u5165\u308A\u4E00\u89A7",
+      text: "\u691C\u7D22\u7D50\u679C\u4E00\u89A7",
       margin: '5px 0'
     })
   });
@@ -15746,57 +15774,26 @@ var FavoriteList = function FavoriteList() {
 
 /***/ }),
 
-/***/ "./resources/js/components/header/modal/ShrineList.jsx":
-/*!*************************************************************!*\
-  !*** ./resources/js/components/header/modal/ShrineList.jsx ***!
-  \*************************************************************/
+/***/ "./resources/js/components/header/HeaderVisitedButton.jsx":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/header/HeaderVisitedButton.jsx ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ShrineList: () => (/* binding */ ShrineList)
+/* harmony export */   HeaderVisitedButton: () => (/* binding */ HeaderVisitedButton)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../DefaultButtonEmotion */ "./resources/js/components/DefaultButtonEmotion.jsx");
+/* harmony import */ var _DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../DefaultButtonEmotion */ "./resources/js/components/DefaultButtonEmotion.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-var ShrineList = function ShrineList() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__.DefaultButtonEmotion, {
-      text: "\u691C\u7D22\u7D50\u679C\u4E00\u89A7",
-      fontSize: '10px',
-      fontWeight: 'bold'
-    })
-  });
-};
-
-/***/ }),
-
-/***/ "./resources/js/components/header/modal/VisitedList.jsx":
-/*!**************************************************************!*\
-  !*** ./resources/js/components/header/modal/VisitedList.jsx ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   VisitedList: () => (/* binding */ VisitedList)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../DefaultButtonEmotion */ "./resources/js/components/DefaultButtonEmotion.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-var VisitedList = function VisitedList() {
+var HeaderVisitedButton = function HeaderVisitedButton() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_DefaultButtonEmotion__WEBPACK_IMPORTED_MODULE_1__.DefaultButtonEmotion, {
       text: "\u884C\u3063\u305F\u3053\u3068\u3042\u308B\u4E00\u89A7"

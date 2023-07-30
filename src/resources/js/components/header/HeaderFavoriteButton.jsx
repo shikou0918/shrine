@@ -1,13 +1,12 @@
 import * as React from 'react';
-import { DefaultButtonEmotion } from '../../DefaultButtonEmotion';
+import { DefaultButtonEmotion } from '../DefaultButtonEmotion';
 
-export const FavoriteList = () => {
+export const HeaderFavoriteButton = () => {
 
   return (
     <>
       <DefaultButtonEmotion
         text='お気に入り一覧'
-        margin={'5px 0'}
       />
     </>
   );
