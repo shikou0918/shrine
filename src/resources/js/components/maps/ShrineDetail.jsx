@@ -7,7 +7,6 @@ export const ShrineDetail = React.memo(({ selectedShrine, GoogleApiKey }) => {
     height: 'auto',
     maxHeight: '488px',
     backgroundColor: 'white',
-    
     marginTop: '50px',
     marginBottom: '10px',
     fontSize: 14,
