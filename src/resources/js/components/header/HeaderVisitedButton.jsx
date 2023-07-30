@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { DefaultButtonEmotion } from '../../DefaultButtonEmotion';
+import { DefaultButtonEmotion } from '../DefaultButtonEmotion';
 
-export const VisitedList = () => {
+export const HeaderVisitedButton = () => {
 
   return (
     <>

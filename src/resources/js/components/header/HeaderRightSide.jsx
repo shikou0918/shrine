@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box } from '@mui/material';
-// import { DefaultButtonEmotion } from '../DefaultButtonEmotion';
-import { ShrineList } from './modal/ShrineList';
-import { FavoriteList } from './modal/FavoriteList';
-import { VisitedList } from './modal/VisitedList';
+import { HeaderFavoriteButton } from './HeaderFavoriteButton';
+import { HeaderShrineButton } from './HeaderShrineButton';
+import { HeaderVisitedButton } from './HeaderVisitedButton';
+
 
 export const HeaderRightSide = () => {
 
@@ -15,9 +15,9 @@ export const HeaderRightSide = () => {
   return (
     <>
       <Box sx={BoxStyle}>
-        <ShrineList />
-        <FavoriteList />
-        <VisitedList />
+        <HeaderFavoriteButton />
+        <HeaderShrineButton />
+        <HeaderVisitedButton />
       </Box>
     </>
   );
