@@ -19,10 +19,8 @@ export const DefaultButtonEmotion = (props) => {
           borderColor: '#fff',
           borderRadius: '24px',
           cursor: 'pointer',
-          // textOverflow: 'ellipsis',
-          // whiteSpace: 'nowrap',
-          // pointerEvents: 'auto',
         }}
+        onClick={props.onClick}
       >
         {props.text}
       </BtnEmo>
