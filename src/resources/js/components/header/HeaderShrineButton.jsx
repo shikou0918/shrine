@@ -16,7 +16,7 @@ export const HeaderShrineButton = () => {
         margin={'5px 0'}
         onClick={handleButtonClick}
       />
-      <ShrineList modalDisp={shrineListModalDisp} />
+      <ShrineList setModalDisp={setShrineListModalDisp}  modalDisp={shrineListModalDisp} />
     </>
   );
 };
