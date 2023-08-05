@@ -15964,7 +15964,7 @@ var MainGoogleMap = function MainGoogleMap(_ref) {
         onLoad: onLoad,
         onZoomChanged: handleOnChange,
         onDragEnd: handleOnChange,
-        zoom: 17,
+        zoom: 14,
         children: [shrineInformation.map(function (shrine, index) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_ShrineMarkers__WEBPACK_IMPORTED_MODULE_1__.ShrineMarkers, {
             lat: shrine.geometry.location.lat,
