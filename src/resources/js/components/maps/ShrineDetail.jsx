@@ -2,6 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 
 export const ShrineDetail = React.memo(({ selectedShrine, GoogleApiKey }) => {
+  console.log(selectedShrine.description)
   const infoWindowStyle = {
     width: '428px',
     height: 'auto',
@@ -25,9 +26,7 @@ export const ShrineDetail = React.memo(({ selectedShrine, GoogleApiKey }) => {
     selectedShrine && (
       <Box sx={infoWindowStyle}>
         <h3>{selectedShrine.name}</h3>
-        <p>{selectedShrine.description}</p>
         {photoUrl && <img src={photoUrl} alt="Shrine Photo" />}
-        {/* その他の神社情報を表示する */}
       </Box>
     )
   );
