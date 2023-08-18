@@ -15,7 +15,6 @@ export const ShrineDetail = React.memo(({ selectedShrine, GoogleApiKey }) => {
   };
 
   let photoUrl = null;
-
   if (selectedShrine && selectedShrine.photos && selectedShrine.photos.length > 0) {
     const photoReference = selectedShrine.photos[0].photo_reference;
     const width = 400;
