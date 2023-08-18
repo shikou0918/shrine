@@ -90,7 +90,7 @@ export const MainGoogleMap = ({ GoogleApiKey }) => {
           onLoad={onLoad}
           onZoomChanged={handleOnChange}
           onDragEnd={handleOnChange}
-          zoom={17}
+          zoom={14}
         >
           {shrineInformation.map((shrine, index) => (
             <ShrineMarkers
