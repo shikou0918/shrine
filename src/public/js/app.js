@@ -16014,6 +16014,7 @@ __webpack_require__.r(__webpack_exports__);
 var ShrineDetail = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().memo(function (_ref) {
   var selectedShrine = _ref.selectedShrine,
     GoogleApiKey = _ref.GoogleApiKey;
+  console.log(selectedShrine.description);
   var infoWindowStyle = {
     width: '428px',
     height: 'auto',
@@ -16035,8 +16036,6 @@ var ShrineDetail = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().mem
     sx: infoWindowStyle,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: selectedShrine.name
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-      children: selectedShrine.description
     }), photoUrl && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: photoUrl,
       alt: "Shrine Photo"
