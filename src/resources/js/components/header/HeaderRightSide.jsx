@@ -4,7 +4,6 @@ import { HeaderFavoriteButton } from './HeaderFavoriteButton';
 import { HeaderShrineButton } from './HeaderShrineButton';
 import { HeaderVisitedButton } from './HeaderVisitedButton';
 
-
 export const HeaderRightSide = () => {
 
   const BoxStyle = {
